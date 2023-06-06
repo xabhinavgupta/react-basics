@@ -1,6 +1,10 @@
 import { Component } from "react";
 
 class Login extends Component {
+  state={
+    email:"",
+    counter: 0
+  }
   render() {
     return (
       <form>
@@ -30,5 +34,9 @@ class Login extends Component {
 }
 const userLogin = () => {
   console.log("button clicked");
+  this.setState=({
+    counter : this.state.counter + 1,
+  })
+  console.log(this.counter);
 };
 export default Login;

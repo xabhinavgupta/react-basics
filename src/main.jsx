@@ -8,6 +8,7 @@ import StateWithCC from './Day2-State/1.StateInComponent.jsx'
 import StateWithCC2 from './Day2-State/2.VikashComponent.jsx'
 import Calcualtor from './Day2-State/3.Calculator.jsx'
 import Login from './Day2-State/4.LoginForm.jsx'
+import FormCC from './Day3-FormComponent.Layout/1.FormComponentLayout.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -18,6 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <StateWithCC2/> 
     <Calcualtor/>
     <Login/>
+    <FormCC/>
   </React.StrictMode>,   
 )
 
