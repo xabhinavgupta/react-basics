@@ -1,7 +1,6 @@
-import { Component } from "react";
 
-class FormCC extends Component {
-  state = {
+function FormCCFunc() {
+  const [state, setState] = useState({
     name: "",
     email: "",
     password: "",
@@ -10,34 +9,29 @@ class FormCC extends Component {
     cssRadio: "",
     food: "",
     cars:"",
-  };
+  });
   // how to write style ?
-  divStyle ={
-    padding: 10,
-    margin: 20,
-
-  }
 
 
-  onNameChange = (e) => {
-    this.setState({
-      name: e.target.value,
-    });
-  };
+//   const onNameChange = (e) => {
+//     this.setState({
+//       name: e.target.value,
+//     });
+//   };
 
-  onEmailChange = (e) => {
-    this.setState({
-      email: e.target.value,
-    });
-  };
+//   const onEmailChange = (e) => {
+//     this.setState({
+//       email: e.target.value,
+//     });
+//   };
 
-  onPasswordChange = (e) => {
-    this.setState({
-      password: e.target.value,
-    });
-  };
+//   onPasswordChange = (e) => {
+//     this.setState({
+//       password: e.target.value,
+//     });
+//   };
 
-  onInputChange = (e) => {
+  const onInputChange = (e) => {
     const { name, value } = e.target;
     console.log("OnInputChange", { name, value });
 
@@ -52,7 +46,7 @@ class FormCC extends Component {
   };
 
   
-  render() {
+  
     return (
       <div style={{alignItems: 'center', margin: '10px', border:'1px solid silver', borderRadius:'10px', padding:'10px'}} >
         <div>
@@ -62,7 +56,7 @@ class FormCC extends Component {
             type="text"
             placeholder="Enter your name"
             value={this.state.name}
-            onChange={this.onInputChange}
+            onChange={onInputChange}
           />
         </div>
         <div>
@@ -72,7 +66,7 @@ class FormCC extends Component {
             type="email"
             placeholder="Enter your email address"
             value={this.state.email}
-            onChange={this.onInputChange}
+            onChange={onInputChange}
           />
         </div>
         <div>
@@ -82,7 +76,7 @@ class FormCC extends Component {
             type="password"
             placeholder="Password"
             value={this.state.password}
-            onChange={this.onInputChange}
+            onChange={onInputChange}
           />
         </div>
         <div>
@@ -92,7 +86,7 @@ class FormCC extends Component {
             type="text"
             placeholder="Description"
             value={this.state.description}
-            onChange={this.onInputChange}
+            onChange={onInputChange}
           />
         </div>
         <div>
@@ -100,14 +94,14 @@ class FormCC extends Component {
             name="htmlRadio"
             type="radio"
             value="HTML"
-            onChange={this.onInputChange}
+            onChange={onInputChange}
           />
           <label>HTML</label>
           <input
             name="htmlRadio"
             type="radio"
             value="CSS"
-            onChange={this.onInputChange}
+            onChange={onInputChange}
           />
           <label>CSS</label>
         </div>
@@ -131,11 +125,11 @@ class FormCC extends Component {
           <label htmlFor="">Pizza</label>
         </div>
         <div>
-          <ul name="list" onChange={this.onEmailChange}>
+          <ul name="list">
             <li>Item 1</li>
             <li>Item 2</li>
           </ul>
-          <ol name="list" type="I" onChange={this.onEmailChange}>
+          <ol name="list" type="I">
             <li>Item 1</li>
             <li>Item 2</li>
           </ol>
@@ -166,7 +160,7 @@ class FormCC extends Component {
         </div>
         <div>
         <label htmlFor="cars">Choose a car:</label>
-  <select name="cars" id="cars" onChange={this.onInputChange}>
+  <select name="cars" id="cars" onChange={onInputChange}>
     <option value="volvo">Volvo</option>
     <option value="saab">Saab</option>
     <option value="opel">Opel</option>
@@ -176,6 +170,5 @@ class FormCC extends Component {
       </div>
     );
   }
-}
 
-export default FormCC;
+export default FormCCFunc;
