@@ -10,26 +10,6 @@ function FormCCFunc() {
     food: "",
     cars:"",
   });
-  // how to write style ?
-
-
-//   const onNameChange = (e) => {
-//     this.setState({
-//       name: e.target.value,
-//     });
-//   };
-
-//   const onEmailChange = (e) => {
-//     this.setState({
-//       email: e.target.value,
-//     });
-//   };
-
-//   onPasswordChange = (e) => {
-//     this.setState({
-//       password: e.target.value,
-//     });
-//   };
 
   const onInputChange = (e) => {
     const { name, value } = e.target;
@@ -42,10 +22,7 @@ function FormCCFunc() {
         console.log(this.state);
       };
     // this.render();
-    // console.log(this.state);
-  };
-
-  
+    // console.log(this.state); };  
   
     return (
       <div style={{alignItems: 'center', margin: '10px', border:'1px solid silver', borderRadius:'10px', padding:'10px'}} >
@@ -56,7 +33,7 @@ function FormCCFunc() {
             type="text"
             placeholder="Enter your name"
             value={this.state.name}
-            onChange={onInputChange}
+            onChange={this.onInputChange}
           />
         </div>
         <div>
@@ -134,14 +111,6 @@ function FormCCFunc() {
             <li>Item 2</li>
           </ol>
         </div>
-        {/* <div>
-          <video
-            width="320"
-            height="240"
-            src="https://www.youtube.com/watch?v=ENPalcW0ffc"
-            type="video/mp4"
-          ></video>
-        </div> */}
         <div>
           <table style={{border:'1px solid'}}>
             <tr>
@@ -170,5 +139,6 @@ function FormCCFunc() {
       </div>
     );
   }
+}
 
 export default FormCCFunc;
