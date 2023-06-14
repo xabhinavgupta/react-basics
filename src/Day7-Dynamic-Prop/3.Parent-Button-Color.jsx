@@ -3,15 +3,15 @@ import ChildColorComponent from "./4.Child-Text-Color";
 
 const ParentColorComponent = () => {
   const [textColor, setTextColor] = useState("black");
-  const colorChange = (clr) => {
-    setTextColor(clr);
+  const colorChange = (e) => {
+    setTextColor(e.target.name);
   };
   return (
     <div>
       
-      <button onClick={colorChange("red")}>Red</button>
-      <button onClick={colorChange("yellow")}>Yellow</button>
-      <button onClick={colorChange("blue")}>Blue</button>
+      <button name="red" onClick={colorChange}>Red</button>
+      <button name="green" onClick={colorChange}>Yellow</button>
+      <button name="blue" onClick={colorChange}>Blue</button>
       <ChildColorComponent color={textColor} />
       {/* <button onClick={() => setTextColor('red')}>Red</button>
       <button onClick={() => setTextColor('yellow')}>Yellow</button>
