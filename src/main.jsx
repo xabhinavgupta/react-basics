@@ -11,15 +11,17 @@ import "./index.css";
 // import FormCC from './Day3-FormComponent.Layout/1.FormComponentLayout.jsx'
 // import FCCounter from './Day4-Function/1.FunctionComponent.jsx'
 //import InputForm from './Day5-CreateFunctionalCOmponent/1.FormInFunctionalComponent.jsx'
-import ParentView from './Day6-State-Props/1.ParentView.jsx'
-import HomeView from "./Day7-Dynamic-Prop/1.Home-viewdynamic-prop.jsx";
-import ParentColorComponent from "./Day7-Dynamic-Prop/3.Parent-Button-Color.jsx";
+// import ParentView from './Day6-State-Props/1.ParentView.jsx'
+// import HomeView from "./Day7-Dynamic-Prop/1.Home-viewdynamic-prop.jsx";
+// import ParentColorComponent from "./Day7-Dynamic-Prop/3.Parent-Button-Color.jsx";
+import ProductView from "./Day8-Parent-Class-Parent-Data-Transfer/1.Parent-add-to-card.jsx"
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <div>
     <App />    
-    <ParentView />
+    {/* <ParentView />
     <HomeView/>
-    <ParentColorComponent/>
+    <ParentColorComponent/> */}
+    <ProductView/>
   </div>
 );
