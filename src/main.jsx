@@ -14,7 +14,9 @@ import "./index.css";
 // import ParentView from './Day6-State-Props/1.ParentView.jsx'
 // import HomeView from "./Day7-Dynamic-Prop/1.Home-viewdynamic-prop.jsx";
 // import ParentColorComponent from "./Day7-Dynamic-Prop/3.Parent-Button-Color.jsx";
-import ProductView from "./Day8-Parent-Class-Parent-Data-Transfer/1.Parent-add-to-card.jsx"
+//import ProductView from "./Day8-Parent-Class-Parent-Data-Transfer/1.Parent-add-to-card.jsx"
+import ListRender from "./Day9-PropsFunctionPass/1.ListRender.jsx";
+import ListRenderAdd from "./Day9-PropsFunctionPass/2.AddList.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <div>
@@ -22,6 +24,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     {/* <ParentView />
     <HomeView/>
     <ParentColorComponent/> */}
-    <ProductView/>
+    {/* <ProductView/> */}
+    <ListRender/>
+    <ListRenderAdd/>
   </div>
 );
