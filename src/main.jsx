@@ -2,6 +2,7 @@
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
+import ParentComponent from "./Day10-PropsCallBack-ChildToParent/1.Parent.comp.jsx";
 // import MyClassComponent from './Day1-Components/1.ClassComponent.jsx'
 // import Homepage from './Homepage.jsx'
 // import StateWithCC from './Day2-State/1.StateInComponent.jsx'
@@ -15,8 +16,8 @@ import "./index.css";
 // import HomeView from "./Day7-Dynamic-Prop/1.Home-viewdynamic-prop.jsx";
 // import ParentColorComponent from "./Day7-Dynamic-Prop/3.Parent-Button-Color.jsx";
 //import ProductView from "./Day8-Parent-Class-Parent-Data-Transfer/1.Parent-add-to-card.jsx"
-import ListRender from "./Day9-PropsFunctionPass/1.ListRender.jsx";
-import ListRenderAdd from "./Day9-PropsFunctionPass/2.AddList.jsx";
+//import ListRender from "./Day9-PropsFunctionPass/1.ListRender.jsx";
+//import ListRenderAdd from "./Day9-PropsFunctionPass/2.AddList.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <div>
@@ -25,7 +26,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <HomeView/>
     <ParentColorComponent/> */}
     {/* <ProductView/> */}
-    <ListRender/>
+    {/* <ListRender/>
     <ListRenderAdd/>
+     */}
+     <ParentComponent/>
   </div>
 );

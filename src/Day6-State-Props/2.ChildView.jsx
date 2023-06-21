@@ -16,7 +16,7 @@
           {/* {meraProps.name} from {meraProps.city} with {meraProps.number || "NA"} 1st way to handle defaults */} /
           {name} from {city} with {number}
         </p>
-        <p>{city || number}</p>
+        <p>{city || number}</p>x``
       </div>
     );
   };
