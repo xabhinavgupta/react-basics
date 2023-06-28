@@ -18,8 +18,9 @@ import "./index.css";
 //import ProductView from "./Day8-Parent-Class-Parent-Data-Transfer/1.Parent-add-to-card.jsx"
 //import ListRender from "./Day9-PropsFunctionPass/1.ListRender.jsx";
 //import ListRenderAdd from "./Day9-PropsFunctionPass/2.AddList.jsx";
-import ConditionalRenderingV1 from "./Day11-Conditional-Rendering/1.Conditional-Rendering.jsx";
-import ConditionalRenderingForm from "./Day11-Conditional-Rendering/2.Conditional-Form.jsx";
+//import ConditionalRenderingV1 from "./Day11-Conditional-Rendering/1.Conditional-Rendering.jsx";
+//import ConditionalRenderingForm from "./Day11-Conditional-Rendering/2.Conditional-Form.jsx";
+import ProductListSpinner from "./Day12-Mounting-API-Call/2.product-list.Layout.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <div>
@@ -32,7 +33,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <ListRenderAdd/>
      */}
      {/* <ParentComponent/> */}
-     <ConditionalRenderingV1/>
-     <ConditionalRenderingForm/>
+     {/* <ConditionalRenderingV1/>
+     <ConditionalRenderingForm/> */}
+     <ProductListSpinner/>
   </div>
 );
