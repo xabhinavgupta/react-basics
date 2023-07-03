@@ -20,7 +20,12 @@ import "./index.css";
 //import ListRenderAdd from "./Day9-PropsFunctionPass/2.AddList.jsx";
 //import ConditionalRenderingV1 from "./Day11-Conditional-Rendering/1.Conditional-Rendering.jsx";
 //import ConditionalRenderingForm from "./Day11-Conditional-Rendering/2.Conditional-Form.jsx";
-import ProductListSpinner from "./Day12-Mounting-API-Call/2.product-list.Layout.jsx";
+//import ProductListSpinner from "./Day12-Mounting-API-Call/2.product-list.Layout.jsx";
+//import UseEffectExample from "./Day13-UseEffect/1.UseEffect-RunOnce-OnChange.jsx";
+import UseEffectExamplesV1TotalCount from "./Day15-UseEffect-Uses/1.TotalPriceCount.jsx";
+import Toggle from "./Day15-UseEffect-Uses/2.Toggle-Conditional.jsx";
+import ToggleV2 from "./Day15-UseEffect-Uses/3.ToogleV2.jsx";
+import ShowHideFifth from "./Day15-UseEffect-Uses/4.Mounting-Mouse-Coordinates.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <div>
@@ -35,6 +40,11 @@ ReactDOM.createRoot(document.getElementById("root")).render(
      {/* <ParentComponent/> */}
      {/* <ConditionalRenderingV1/>
      <ConditionalRenderingForm/> */}
-     <ProductListSpinner/>
+     {/* <ProductListSpinner/> */}
+     {/* <UseEffectExample/> */}
+     <UseEffectExamplesV1TotalCount/>
+     <Toggle/>
+     <ToggleV2/>
+     <ShowHideFifth/>
   </div>
 );
