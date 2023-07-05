@@ -2,6 +2,7 @@
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
+import FakeApiResponse from "./Day16-Postman/2.FakeAPIAddToCart.jsx";
 //import ParentComponent from "./Day10-PropsCallBack-ChildToParent/1.Parent.comp.jsx";
 // import MyClassComponent from './Day1-Components/1.ClassComponent.jsx'
 // import Homepage from './Homepage.jsx'
@@ -22,10 +23,10 @@ import "./index.css";
 //import ConditionalRenderingForm from "./Day11-Conditional-Rendering/2.Conditional-Form.jsx";
 //import ProductListSpinner from "./Day12-Mounting-API-Call/2.product-list.Layout.jsx";
 //import UseEffectExample from "./Day13-UseEffect/1.UseEffect-RunOnce-OnChange.jsx";
-import UseEffectExamplesV1TotalCount from "./Day15-UseEffect-Uses/1.TotalPriceCount.jsx";
-import Toggle from "./Day15-UseEffect-Uses/2.Toggle-Conditional.jsx";
-import ToggleV2 from "./Day15-UseEffect-Uses/3.ToogleV2.jsx";
-import ShowHideFifth from "./Day15-UseEffect-Uses/4.Mounting-Mouse-Coordinates.jsx";
+// import UseEffectExamplesV1TotalCount from "./Day15-UseEffect-Uses/1.TotalPriceCount.jsx";
+// import Toggle from "./Day15-UseEffect-Uses/2.Toggle-Conditional.jsx";
+// import ToggleV2 from "./Day15-UseEffect-Uses/3.ToogleV2.jsx";
+// import ShowHideFifth from "./Day15-UseEffect-Uses/4.Mounting-Mouse-Coordinates.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <div>
@@ -42,9 +43,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
      <ConditionalRenderingForm/> */}
      {/* <ProductListSpinner/> */}
      {/* <UseEffectExample/> */}
-     <UseEffectExamplesV1TotalCount/>
+     {/* <UseEffectExamplesV1TotalCount/>
      <Toggle/>
      <ToggleV2/>
-     <ShowHideFifth/>
+     <ShowHideFifth/> */}
+     <FakeApiResponse/>
   </div>
 );
