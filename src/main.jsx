@@ -2,7 +2,8 @@
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
-import FakeApiResponse from "./Day16-Postman/2.FakeAPIAddToCart.jsx";
+//import FakeApiResponse from "./Day16-Postman/2.FakeAPIAddToCart.jsx";
+import ParentMemo from "./Day19-Memo/1.ParentMemo.jsx";
 //import ParentComponent from "./Day10-PropsCallBack-ChildToParent/1.Parent.comp.jsx";
 // import MyClassComponent from './Day1-Components/1.ClassComponent.jsx'
 // import Homepage from './Homepage.jsx'
@@ -47,6 +48,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
      <Toggle/>
      <ToggleV2/>
      <ShowHideFifth/> */}
-     <FakeApiResponse/>
+     {/* <FakeApiResponse/> */}
+     <ParentMemo/>
   </div>
 );
