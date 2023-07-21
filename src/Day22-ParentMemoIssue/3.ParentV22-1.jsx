@@ -3,6 +3,7 @@ import ChildV22_1 from "./ChildV22-1";
 const ParentV22_1 = () => {
   const [counter1, setCounter1] = useState(0);
   const [counter2, setCounter2] = useState(0);
+  //const [counter3, setCounter3] = useState(0);
 
   const onCounter1Change = useCallback(() => {
     setCounter1((value) => value + 1);
