@@ -28,7 +28,7 @@ const CreateOTPForm = () => {
           {otp.map((digit, index) => (
             <input
               key={index}
-              type="text"
+              type="number"
               value={digit}
               maxLength={1}
               onChange={(e) => inputChange(e, index)}
@@ -37,6 +37,7 @@ const CreateOTPForm = () => {
           ))}
         </div>
       </div>
+      <div><br /></div>
       <button onClick={submitOTP}>Submit OTP</button>
     </div>
   );

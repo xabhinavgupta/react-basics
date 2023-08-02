@@ -5,7 +5,7 @@ import "./index.css";
 //import Login from "./Day25-HOCLoginForm/Login.jsx";
 import WithUseRef from "./Day28-UseRef/2.WithUseRef.jsx";
 import WithoutUseRef from "./Day28-UseRef/1.WithoutUseRef.jsx";
-import CreateOTPForm from "./OTP-Tasl/1.FormOTP.jsx";
+import CreateOTPForm from "./OTP-Task/1.FormOTP.jsx";
 
 //import ParentV22_1 from "./Day22-ParentMemoIssue/3.ParentV22-1.jsx";
 //import FakeApiResponse from "./Day16-Postman/2.FakeAPIAddToCart.jsx";
