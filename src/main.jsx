@@ -2,7 +2,12 @@
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
-import ParentV22_1 from "./Day22-ParentMemoIssue/3.ParentV22-1.jsx";
+//import Login from "./Day25-HOCLoginForm/Login.jsx";
+import WithUseRef from "./Day28-UseRef/2.WithUseRef.jsx";
+import WithoutUseRef from "./Day28-UseRef/1.WithoutUseRef.jsx";
+import CreateOTPForm from "./OTP-Tasl/1.FormOTP.jsx";
+
+//import ParentV22_1 from "./Day22-ParentMemoIssue/3.ParentV22-1.jsx";
 //import FakeApiResponse from "./Day16-Postman/2.FakeAPIAddToCart.jsx";
 //import ParentMemo from "./Day19-Memo/1.ParentMemo.jsx";
 //import ParentComponent from "./Day10-PropsCallBack-ChildToParent/1.Parent.comp.jsx";
@@ -29,6 +34,17 @@ import ParentV22_1 from "./Day22-ParentMemoIssue/3.ParentV22-1.jsx";
 // import Toggle from "./Day15-UseEffect-Uses/2.Toggle-Conditional.jsx";
 // import ToggleV2 from "./Day15-UseEffect-Uses/3.ToogleV2.jsx";
 // import ShowHideFifth from "./Day15-UseEffect-Uses/4.Mounting-Mouse-Coordinates.jsx";
+// const router = createBrowserRouter([
+//   {
+//     path: "/",
+//     element: <MyProducts />,
+//   },
+//   {
+//     path: "/product/:id",
+//     element: <ProductDetails />,
+//   },
+// ]);
+
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <div>
@@ -51,6 +67,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
      <ShowHideFifth/> */}
      {/* <FakeApiResponse/> */}
      {/* <ParentMemo/> */}
-     <ParentV22_1 />
+     {/* <ParentV22_1 /> */}
+     {/* {Login} */}
+     <WithUseRef/>
+     <WithoutUseRef/>
+     <CreateOTPForm/>
   </div>
 );
