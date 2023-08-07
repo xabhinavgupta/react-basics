@@ -14,8 +14,8 @@ const ProductLists = () => {
   }, []);
 
   const product = useSelector((state) => state.storeSlice.product);
-  const cartt = useSelector((state) => state.storeSlice.cart);
-  console.log(cartt);
+  const cart = useSelector((state) => state.storeSlice.cart);
+  console.log(cart);
   console.log(product);
 
   return (

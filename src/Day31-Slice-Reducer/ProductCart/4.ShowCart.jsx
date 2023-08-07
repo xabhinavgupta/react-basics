@@ -4,14 +4,14 @@ import { Link } from "react-router-dom";
 
 const ShowCart = () => {
   const product = useSelector((state) => state.storeSlice.product);
-  const cartt = useSelector((state) => state.storeSlice.cart);
+  const cart = useSelector((state) => state.storeSlice.cart);
   const cartData = useMemo(() => {
-    const temp = cartt.map((cartItem) => {
+    const tempCart = cart.map((cartItem) => {
       const prodData = product.filter((prod) => prod.id === cartItem);
       return prodData[0];
     });
-    return temp;
-  }, [product, cartt]);
+    return tempCart;
+  }, [product, cart]);
   return (
     <div>
       <Link to={`/`}>
