@@ -6,7 +6,8 @@ import "./index.css";
 import WithUseRef from "./Day28-UseRef/2.WithUseRef.jsx";
 import WithoutUseRef from "./Day28-UseRef/1.WithoutUseRef.jsx";
 import CreateOTPForm from "./OTP-Task/1.FormOTP.jsx";
-
+import { store } from './app/store'
+import { Provider } from 'react-redux'
 //import ParentV22_1 from "./Day22-ParentMemoIssue/3.ParentV22-1.jsx";
 //import FakeApiResponse from "./Day16-Postman/2.FakeAPIAddToCart.jsx";
 //import ParentMemo from "./Day19-Memo/1.ParentMemo.jsx";
@@ -72,5 +73,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
      <WithUseRef/>
      <WithoutUseRef/>
      <CreateOTPForm/>
+     <Provider store={store}>
+    <App />
+  </Provider>,
   </div>
 );
