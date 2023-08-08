@@ -11,7 +11,7 @@ const ProductLists = () => {
     axios.get("https://fakestoreapi.com/products").then((response) => {
       dispatch(storeData(response.data));
     });
-  }, []);
+  }, [dispatch]);
 
   const product = useSelector((state) => state.storeSlice.product);
   const cart = useSelector((state) => state.storeSlice.cart);
@@ -28,7 +28,7 @@ const ProductLists = () => {
           return (
             <li key={item.id}>
               {item.title}
-              <button onClick={() => dispatch(storeCart(item.id))}>
+              <button onClick={() => dispatch(storeCart(item))}>
                 Add To Cart
               </button>
             </li>
