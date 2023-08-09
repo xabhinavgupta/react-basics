@@ -3,11 +3,15 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 //import Login from "./Day25-HOCLoginForm/Login.jsx";
-import WithUseRef from "./Day28-UseRef/2.WithUseRef.jsx";
-import WithoutUseRef from "./Day28-UseRef/1.WithoutUseRef.jsx";
-import CreateOTPForm from "./OTP-Task/1.FormOTP.jsx";
-import { store } from './app/store'
-import { Provider } from 'react-redux'
+// import WithUseRef from "./Day28-UseRef/2.WithUseRef.jsx";
+// import WithoutUseRef from "./Day28-UseRef/1.WithoutUseRef.jsx";
+// import CreateOTPForm from "./OTP-Task/1.FormOTP.jsx";
+//import { store } from './@reduxjs/toolkit'
+import { Provider } from "react-redux";
+import { ProductLists } from "./Day31-Slice-Reducer/ProductCartRedux/3.ProductCartAPI.jsx";
+import { storeSlice } from "./Day31-Slice-Reducer/ProductCartRedux/2.ProductsStore.jsx";
+import ShowCart from "./Day31-Slice-Reducer/ProductCartRedux/4.ShowCart.jsx";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 //import ParentV22_1 from "./Day22-ParentMemoIssue/3.ParentV22-1.jsx";
 //import FakeApiResponse from "./Day16-Postman/2.FakeAPIAddToCart.jsx";
 //import ParentMemo from "./Day19-Memo/1.ParentMemo.jsx";
@@ -46,10 +50,20 @@ import { Provider } from 'react-redux'
 //   },
 // ]);
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <ProductLists />,
+  },
+  {
+    path: "/showcart",
+    element: <ShowCart />,
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <div>
-    <App />    
+    <App />
     {/* <ParentView />
     <HomeView/>
     <ParentColorComponent/> */}
@@ -57,24 +71,26 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     {/* <ListRender/>
     <ListRenderAdd/>
      */}
-     {/* <ParentComponent/> */}
-     {/* <ConditionalRenderingV1/>
+    {/* <ParentComponent/> */}
+    {/* <ConditionalRenderingV1/>
      <ConditionalRenderingForm/> */}
-     {/* <ProductListSpinner/> */}
-     {/* <UseEffectExample/> */}
-     {/* <UseEffectExamplesV1TotalCount/>
+    {/* <ProductListSpinner/> */}
+    {/* <UseEffectExample/> */}
+    {/* <UseEffectExamplesV1TotalCount/>
      <Toggle/>
      <ToggleV2/>
      <ShowHideFifth/> */}
-     {/* <FakeApiResponse/> */}
-     {/* <ParentMemo/> */}
-     {/* <ParentV22_1 /> */}
-     {/* {Login} */}
-     <WithUseRef/>
-     <WithoutUseRef/>
-     <CreateOTPForm/>
-     <Provider store={store}>
-    <App />
-  </Provider>,
+    {/* <FakeApiResponse/> */}
+    {/* <ParentMemo/> */}
+    {/* <ParentV22_1 /> */}
+    {/* {Login} */}
+    {/* <WithUseRef />
+    <WithoutUseRef />
+    <CreateOTPForm /> */}
+    {/* <ProductLists /> */}
+    <Provider store={storeSlice}>
+      <RouterProvider router={router} />
+    </Provider>
+    ,
   </div>
 );

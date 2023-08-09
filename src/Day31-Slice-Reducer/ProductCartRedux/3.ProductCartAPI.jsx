@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { storeData, storeCart } from "./ProductSlice";
+import { storeAPIData, storeAddToCart } from "./2.ProductsStore";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
@@ -9,7 +9,7 @@ const ProductLists = () => {
 
   useEffect(() => {
     axios.get("https://fakestoreapi.com/products").then((response) => {
-      dispatch(storeData(response.data));
+      dispatch(storeAPIData(response.data));
     });
   }, [dispatch]);
 
@@ -20,7 +20,7 @@ const ProductLists = () => {
 
   return (
     <div>
-      <Link to={`/showCart`}>
+      <Link to={`/showcart`}>
         <button>View Cart</button>
       </Link>
       <ul>
@@ -28,7 +28,7 @@ const ProductLists = () => {
           return (
             <li key={item.id}>
               {item.title}
-              <button onClick={() => dispatch(storeCart(item))}>
+              <button onClick={() => dispatch(storeAddToCart(item))}>
                 Add To Cart
               </button>
             </li>
